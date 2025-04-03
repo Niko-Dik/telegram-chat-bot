@@ -1,0 +1,12 @@
+[Unit]
+Description=Telegram Chat Moderator Bot
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /opt/chat_moderator_bot/bot.py
+WorkingDirectory=/opt/chat_moderator_bot
+Restart=always
+User=YOUR_USERNAME_HERE
+
+[Install]
+WantedBy=multi-user.target
